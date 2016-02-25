@@ -10,7 +10,7 @@ const float xMin_Waveplane = -10.0;
 const float yMin_Waveplane = -10.0;
 const float xdelta_Waveplane = 1.0;
 const float ydelta_Waveplane = 1.0;
-//********************回调所用更新数据**************************************
+//**************************回调所用更新数据**************************************
 //****************************节点更新回调**********************************
 class WaveplaneCallback : public osg::Drawable::UpdateCallback
 {

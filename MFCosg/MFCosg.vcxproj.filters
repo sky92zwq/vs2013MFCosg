@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\MFCosg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\MFCosgDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\MFCosgView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MFC_OSG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\MFCosg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\MFCosgDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\MFCosgView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\YYYYYYYYYYYYYYYYY研\OSG\OpenSceneGraph-3.0.1\examples\osgviewerMFC\MFC_OSG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\MFCosg.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\res\buttons.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\res\filelarge.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\res\filesmall.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\res\main.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\res\writelarge.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\res\writesmall.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\res\MFCosgDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\res\MFCosg.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\res\Toolbar256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\res\ribbon.mfcribbon-ms">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\res\MFCosg.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

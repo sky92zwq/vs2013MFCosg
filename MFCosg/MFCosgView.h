@@ -65,4 +65,3 @@ public:
 inline CMFCosgDoc* CMFCosgView::GetDocument() const
    { return reinterpret_cast<CMFCosgDoc*>(m_pDocument); }
 #endif
-

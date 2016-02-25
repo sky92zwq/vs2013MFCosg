@@ -150,7 +150,6 @@ int CMFCosgView::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	return 0;
 }
 
-
 void CMFCosgView::OnInitialUpdate()
 {
 	CView::OnInitialUpdate();

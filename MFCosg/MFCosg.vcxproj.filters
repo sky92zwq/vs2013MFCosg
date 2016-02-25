@@ -59,7 +59,7 @@
     <ClCompile Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\MFCosgView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="F:\YYYYYYYYYYYYYYYYY研\OSG\OpenSceneGraph-3.0.1\examples\osgviewerMFC\MFC_OSG.cpp">
+    <ClCompile Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\MFC_OSG.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

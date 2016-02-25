@@ -125,11 +125,11 @@
     <ClCompile Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\MFCosg.cpp" />
     <ClCompile Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\MFCosgDoc.cpp" />
     <ClCompile Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\MFCosgView.cpp" />
+    <ClCompile Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\MFC_OSG.cpp" />
     <ClCompile Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="F:\YYYYYYYYYYYYYYYYY研\OSG\OpenSceneGraph-3.0.1\examples\osgviewerMFC\MFC_OSG.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\..\..\..\john%27s visual studio 2013\Projects\MFCosg\MFCosg\MFCosg.rc" />

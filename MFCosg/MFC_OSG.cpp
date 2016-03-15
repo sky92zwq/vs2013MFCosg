@@ -10,13 +10,28 @@ const float xMin_Waveplane = -10.0;
 const float yMin_Waveplane = -10.0;
 const float xdelta_Waveplane = 1.0;
 const float ydelta_Waveplane = 1.0;
-//**************************回调所用更新数据**************************************
-//****************************节点更新回调**********************************
+//***************************shader***********************************
+static const char* vertSource = {
+	"\n"
+	"void main()\n"
+	"{\n"
+	"	gl_Position=ftransform();\n"
+	"}\n"
+};
+static const char* fragSource = {
+	"uniform vec4 color;\n"
+	"void main()\n"
+	"{\n"
+	"	gl_FragColor=color;\n"
+	"}\n"
+};
+//**************************回调所用更新数据****************************
+//****************************更新回调**********************************
 class WaveplaneCallback : public osg::Drawable::UpdateCallback
 {
 public:
 	WaveplaneCallback():height(1.0){}
-	//~WaveplaneCallback(){}
+	~WaveplaneCallback(){}
 	virtual void update(osg::NodeVisitor *nv, osg::Drawable *drawabel)
 	{
 		osg::HeightField *pheightfield = dynamic_cast<osg::HeightField*>(drawabel->getShape());
@@ -42,7 +57,7 @@ public:
 
 protected:
 	float height;
-};
+};//*****************************回调end*********************************
 
 
 cOSG::cOSG(HWND hWnd) :
@@ -129,7 +144,6 @@ void cOSG::InitSceneGraph(void)//改造******************
 	pHeightField->setOrigin(osg::Vec3(xMin_Waveplane, yMin_Waveplane, 0));
 	pHeightField->setXInterval(xdelta_Waveplane);
 	pHeightField->setYInterval(ydelta_Waveplane);
-
 	float x, y ,z;
 	for (int i = 0; i < yCount_Waveplane; i++)
 	{
@@ -137,13 +151,24 @@ void cOSG::InitSceneGraph(void)//改造******************
 		{
 			x = xMin_Waveplane + j * xdelta_Waveplane;
 			y = yMin_Waveplane + i * ydelta_Waveplane;
-			z = x*x+y*y;
+			z = 0;
 			pHeightField->setHeight(j, yCount_Waveplane - i - 1, z);//循环得到每个顶点，然后为其设置z值
 		}
 	}
+	//osg::Cylinder
+	osg::ref_ptr<osg::Cylinder> cylinder = new osg::Cylinder(osg::Vec3(1.0f, 0.0f, 0.0f), 10.8f, 10.0f);
+	//createshader
+	osg::ref_ptr<osg::Shader> vertShader = new osg::Shader(osg::Shader::VERTEX,vertSource);
+	osg::ref_ptr<osg::Shader> fragShader = new osg::Shader(osg::Shader::FRAGMENT, fragSource);
+	osg::ref_ptr<osg::Program> program = new osg::Program;
+	program->addShader(vertShader.get());
+	program->addShader(fragShader.get());
+	osg::ref_ptr<osg::Uniform> color = new osg::Uniform("color",osg::Vec4(1.0,0.5,0.5,0.5));
+	
 
-	osg::ref_ptr<osg::ShapeDrawable> shapedrawable = new osg::ShapeDrawable(pHeightField.get());
-	shapedrawable->setUpdateCallback(new WaveplaneCallback);
+	osg::ref_ptr<osg::ShapeDrawable> shapedrawable = new osg::ShapeDrawable(cylinder.get());
+	shapedrawable->setInitialBound(osg::BoundingBox(osg::Vec3(-10.0, -10.0, -10.0), osg::Vec3(10.0, 10.0, 10.0)));
+	//shapedrawable->setUpdateCallback(new WaveplaneCallback);
 	shapedrawable->setUseDisplayList(false);
 	shapedrawable->setUseVertexBufferObjects(true);
 
@@ -151,7 +176,8 @@ void cOSG::InitSceneGraph(void)//改造******************
 	//geode->getOrCreateStateSet()->setMode(GL_LIGHTING, osg::StateAttribute::OFF);
 	/*geode->addDrawable(planeGeom.get());*/
 	geode->addDrawable(shapedrawable);
-	
+	geode->getOrCreateStateSet()->addUniform(color.get());
+	geode->getOrCreateStateSet()->setAttributeAndModes(program.get());
 	
 	
 
